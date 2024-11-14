@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - HairStylo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="animated-title">Servicios</h1>
+        <p class="animated-text">Elige los servicios de belleza que deseas</p>
+        
+        <!-- Icono del Carrito de Compras -->
+        <div class="cart-icon">
+            <img src="https://img.icons8.com/material-outlined/48/000000/shopping-cart.png" alt="Carrito de compras">
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+    <section class="main-content">   
+    <p class="animated-text">
+        En HairStylo, ofrecemos una variedad de servicios de belleza personalizados para ti.
+    </p>
+</section>
+
+    <section class="main-content">
+       
+
+        <ul>
+            <li>
+                <img src="servicios/trenzas gruesas.jpg" alt="Trenzas Gruesas" style="width:60%; height:auto; display:block; margin: 0 auto;">
+                Trenzas gruesas: $45.000 COP
+                <button onclick="addToCart('Trenzas gruesas', 45)">Añadir al carrito</button>
+            </li>
+            <li>
+                <img src="servicios/Imagen de WhatsApp 2024-11-13 a las 19.09.26_dcde7186.jpg" alt="Trenzas Delgadas" style="width:60%; height:auto; display:block; margin: 0 auto;">
+                Trenzas delgadas: $40.000 COP
+                <button onclick="addToCart('Trenzas delgadas', 40)">Añadir al carrito</button>
+            </li>
+            <li>
+                <img src="servicios/tropas africanas.jpg" alt="Tropas Africanas" style="width:60%; height:auto; display:block; margin: 0 auto;">
+                Tropas africanas: $35.000 COP
+                <button onclick="addToCart('Tropas africanas', 35)">Añadir al carrito</button>
+            </li>
+            <li>
+                <img src="servicios/Imagen de WhatsApp 2024-11-13 a las 19.09.25_8744ecf0.jpg" alt="Colas" style="width:60%; height:auto; display:block; margin: 0 auto;">
+                Colas: $20.000 COP
+                <button onclick="addToCart('Colas', 20)">Añadir al carrito</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <section class="cart-section">
+        <h2>Carrito de Compras</h2>
+        <div id="cart-content"></div>
+        <div id="total-price"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 HairStylo - Todos los derechos reservados</p>
+        <a href="index.html" class="back-to-top">Volver al inicio</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

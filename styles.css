@@ -1,0 +1,347 @@
+/* Restablecer márgenes y padding para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente general para la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para el encabezado y secciones con degradado */
+header, .main-header {
+    background: linear-gradient(to right, #8e44ad, #e74c3c); /* Degradado colorido */
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+/* Efectos animados para los textos */
+.animated-title {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    animation: slideIn 1.5s ease-out;
+}
+
+.animated-text {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilo de la imagen principal */
+.main-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Navegación */
+nav {
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e74c3c;
+}
+
+/* Sección de contenido */
+section, .main-content {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+section h2, .main-content h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+section p, .main-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para los servicios */
+.service-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.service-list li {
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-list img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-list img:hover {
+    transform: scale(1.05);
+}
+
+.service-list p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo de pie de página */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Estilo del icono del carrito */
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+#cart-count {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+/* Estilo para el botón "Volver al inicio" */
+.back-to-top {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #8e44ad;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulario de contacto */
+form {
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e74c3c;
+}
+
+/* Estilo para el icono del carrito */
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+#cart-count {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+/* Estilos para la sección del carrito */
+.cart-section {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.remove-item {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    background-color: #c0392b;
+}
+
+/* Resumen del carrito */
+.cart-summary {
+    text-align: right;
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.checkout-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #2980b9;
+}
+/* Para ajustar el tamaño y estilo de la imagen */
+.section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Estilo de la sección principal, para ajustar texto y formato */
+.main-content {
+    padding: 40px;
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    color: #333;
+}
